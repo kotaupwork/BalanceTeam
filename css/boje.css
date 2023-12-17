@@ -1,0 +1,21 @@
+:root {
+    --crna: rgb(0, 0, 0);
+    --bela: rgb(255, 255, 255);
+    --roze: rgb(218, 110, 146);
+    --plava: rgb(93, 209, 200);
+    --zuta: rgb(248,205,2);
+    
+    --pozadina: rgb(209, 186, 195);
+}
+
+.bojaPoz{
+    background-color: var(--pozadina);
+}
+
+.bojaFooter{
+    background: linear-gradient(var(--), var(--));
+}
+
+.bojaMenu{
+    background: linear-gradient(to right, transparent, rgb(218, 110, 146, 0.2), rgb(218, 110, 146, 0.2), transparent);
+}

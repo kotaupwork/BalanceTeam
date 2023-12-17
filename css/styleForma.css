@@ -1,0 +1,131 @@
+fieldset{
+    height: 75vh;
+    width: 60vw;
+
+    border-radius: 30px;
+    border: solid 4px white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    font-size: 24px;
+}
+
+h2{
+    margin: 20px;
+}
+
+input{
+    height: 60px;
+    width: 350px;
+    z-index: 6;
+    
+    padding-left: 1rem;
+    margin: 10px;
+
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: transparent;
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.6);
+
+    font-family: TiltNeon;
+    font-size: 24px;
+    color: white;
+
+    transform: scaleX(100%);
+}
+
+input[text]:focus, input[textarea]:focus, input[password]:focus{
+    background-color: rgba(0,0,0,0.4);
+    border: 3px dotted white;
+
+    margin-left: 25px;
+    transform: scaleX(110%);
+}
+
+.resetuj
+{
+    width: 250px;
+    height: 60px;
+    padding: 10px 30px;
+    margin: 30px;
+    margin-left: 50px;
+    z-index: 6;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: black;
+
+    background-color: rgb(248,205,2);
+    border-radius: 50px;
+    border: 2px solid rgb(248,205,2);
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.6);
+    
+    transition : 1000ms;
+    transform: translateY(0);
+    align-items: center;
+    cursor: pointer;
+}
+
+.resetuj:hover
+{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: rgb(236, 64, 93);
+    color: white;
+    border: solid 2px white;
+}
+
+input[type="radio"]{
+    height: 40px;
+    width: 40px;
+    box-shadow: none;
+}
+label{
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+select{
+    height: 60px;
+    width: 350px;
+    z-index: 6;
+    
+    padding-left: 1rem;
+    margin: 10px;
+
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: transparent;
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.6);
+
+    font-size: 24px;
+}
+
+select optgroup{
+    color: rgb(236, 64, 93);
+}
+select optgroup option{
+    color: black;
+    font-size: 20px;
+}
+
+textarea{
+    height: 350px;
+    width: 350px;
+    z-index: 6;
+    
+    padding: 14px;
+    margin: 10px;
+
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: transparent;
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.6);
+
+    font-size: 24px;
+}
