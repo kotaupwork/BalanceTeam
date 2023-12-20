@@ -16,6 +16,7 @@ body{
     background-color: rgb(5,5,5);
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 a{
@@ -66,8 +67,7 @@ span{
 }
 
 .boxZaSliku{
-    width: 70%; 
-    margin-left: 15%; 
+    width: 100%;
     position: relative;
 }
 .boxslika{

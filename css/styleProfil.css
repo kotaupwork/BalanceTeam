@@ -1,26 +1,14 @@
-.grid-container {
-    display: grid;
-    grid-template-areas:
-      'nav slika'
-      'nis nis';
-    gap: 0px;
-    padding: 0px;
-}
-
-.grid-slika { grid-area: slika; }
-.grid-nav { grid-area: nav; }
-.grid-nista { grid-area: nis; }
-
-
 .profil{
+  width: 100%;
+  height: 120vh;
+  z-index: 4;
+  position: relative;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-
-  width: 100%;
-  height: 120vh;
 }
 
 .profil img{
@@ -30,7 +18,7 @@
   filter: drop-shadow(-0.5rem 1rem 3rem rgb(0, 0, 0));
 }
 
-@keyframes mymove {
+@keyframes rezimeFade {
   from {
     opacity: 1;
   }
@@ -39,7 +27,7 @@
   }
 }
 
-@keyframes mymoveback {
+@keyframes rezimeFadeBack {
   from {
     opacity: 0;
   }
@@ -77,9 +65,9 @@
 }
 .rezime ul li{
   list-style: none;
-  font-size: 30px;
+  font-size: 1.2rem;
   padding-bottom: 20px;
-  filter: drop-shadow(0rem 0rem 4rem rgb(0, 0, 0));
+  filter: drop-shadow(0rem 0rem 2rem rgb(0, 0, 0));
 }
 
 .rezime:hover ul{
@@ -109,6 +97,31 @@
   font-family: JosefinSans;
   text-decoration: underline dashed;
 
-  filter: drop-shadow(0rem 0rem 1.5rem rgb(0, 0, 0));
-  color: var(--plava);
+  filter: drop-shadow(0rem 0rem 1.6rem rgb(0, 0, 0));
+  color: var(--svetlo-plava);
+}
+
+.plavi-trougao{
+  width: 0;
+  height: 0;
+  border-top: 35rem solid var(--plava);
+  border-right: 35rem solid transparent;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.plavi-paralelogram{
+  width: 160%;
+  height: 25rem;
+  background: var(--plava);
+  transform: skew(-20deg) rotate(-57deg);
+
+  overflow: hidden;
+
+  position: absolute;
+  top: 35rem;
+  left: -20rem;
+  z-index: 0;
 }
