@@ -2,12 +2,11 @@
 {
     width: 100%;
     height: 120px;
-    padding-inline: 20px;
-
-    text-align: center;
-    padding-top: 15px;
-    z-index: 4;
     position: relative;
+
+    padding-inline: 20px;
+    padding-top: 15px;
+    text-align: center;
 }
 
 .menustrip ul
@@ -15,6 +14,7 @@
     display: inline-flex;
     list-style: none;
     justify-content: space-around;
+    z-index: 6;
 }
 
 .menustrip ul li
@@ -24,6 +24,7 @@
     padding: 12px 30px 12px 30px;
     z-index: 6;
 
+    filter: drop-shadow(0rem 0rem 3rem rgb(0, 0, 0));
     background-color: rgba(255, 255, 255, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.45);
     border-radius: 30px;
@@ -79,7 +80,7 @@
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.4rem;
     z-index: 8;
 }
 
@@ -110,6 +111,10 @@
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+#tr1{
+    top: -120px;
+}
+
 @media screen and (max-width: 1120px) {
     .menustrip{
         height: 240px;
@@ -117,4 +122,10 @@
     .menustrip ul{
         flex-wrap: wrap;
     }
+    #tr1{
+        top: -240px;
+    }
+}
+.logo.menustrip ul li a img{
+    cursor: pointer !important;
 }

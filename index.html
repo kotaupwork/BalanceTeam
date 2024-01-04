@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/styleMenustrip.css">
     <link rel="stylesheet" href="css/styleFooter.css">
     <link rel="stylesheet" href="css/styleProfil.css">
-    <link rel="stylesheet" href="css/styleMasaza.css"><!--
-    <link rel="stylesheet" href="css/style">
-    <link rel="stylesheet" href="css/style">
+    <link rel="stylesheet" href="css/stylePlanovi.css">
+    <link rel="stylesheet" href="css/styleNutri.css">
+    <link rel="stylesheet" href="css/styleKontakt.css"><!--
     <link rel="stylesheet" href="css/style">
     <link rel="stylesheet" href="css/style">
     <link rel="stylesheet" href="css/style">-->
@@ -20,32 +20,32 @@
     <title>Balance team</title>
     </head>
 
-    <body>
+    <body class="bojaPoz">
         <!-- Effects -->
+        <div class="topGradient">
+        </div>
+        <div class="bottomGradient">
+        </div>
+
+        <div class="boxslika slika startImg">
+            <div class="boxZaSliku" style="height: 41vw; aspect-ratio: 144/77;">
+                <div class="senka1"></div>
+                <div class="senka1 unutrasnja"></div>
+            </div>
+        </div>
+
+        <!-- Vraca na menustrip -->
         <div class="logo menustrip" style="height: 7.5vh; width: auto; border-bottom: none;">
             <ul>
                 <li style="margin: 0; padding: 0;"><a href="#menu"><img src="slike/ikonice/logo.png" style="height: 7.5vh;"></a>
                 </li>
             </ul>
         </div>
-        <div class="topGradient">
-        </div>
-        <div class="bottomGradient">
-        </div>
-
-        <!-- Menustrip -->
-        <body class="bojaPoz">
-            <div class="boxZaSliku" style="height: 45vw; aspect-ratio: 144/77;">
-                <div class="senka1"></div>
-                <div class="senka1 unutrasnja"></div>
-                <img class="boxslika" src="slike/bkg-ignite.jpg"></img>
-            </div>
-            <div class="menustrip" id="menu">
-                <div class="" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 0;"></div>
+           <!-- Menustrip --> 
+        <div class="menustrip bojaPoz2" id="menu">
+            <div class="" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 0;"></div>
                 <ul>
                     <li><a href="#tim"> Nas tim </a>
-                    </li>
-                    <li><a href="#masaze"> Masaze </a>
                     </li>
                     <li><a href="#nutri"> Nutricionista </a>
                     </li>
@@ -57,74 +57,155 @@
                     <li><a href="#faq"> FAQ </a>
                     </li>
                 </ul>
-                <div class="plavi-trougao"></div>
+        </div>
+        <div id="planovi" class="plan bojaPoz2-o">
+            <div id="tr1" class="plavi-trougao"></div>
+            <div class="plavi-paralelogram" style="top: 35rem;"> 
             </div>
-            <div class="profil" id="tim">
-                <div class="plavi-paralelogram"></div>
-                <img src="slike/anim/physiotherapy_1.png" class="ikona-rehab" style="top: 21%; left: 52%;" alt="">
-                <img src="slike/anim/physiotherapy_3.png" class="ikona-rehab" style="top: 32%; left: 37%;" alt="">
-                <img src="slike/anim/physiotherapy_2.png" class="ikona-rehab" style="top: 28%; left: 79%;" alt="">
-                <img src="slike/anim/physiotherapy_4.png" class="ikona-rehab" style="top: 57%; left: 43%;" alt="">
-                <img src="slike/man1-3.png" class="ab" alt="vlada">
-                <div class="rezime">
-                    <h3> Vladimir Stevanovic <br> Master Fizioterapeut </h3>
-                    <ul>
-                        <li>Iskustvo 15 godina na Institutu za Rehabilitaciju, Sokobanjska</li>
-                        <li>3 objavljena naucna rada</li>
-                        <li>4 godine iskustva u radu sa studentima</li>
-                        <li>200+ razlicitih pacijenata</li>
-                        <li>20+ stalnih pacijenata</li>
-                        <li><a href="#masaze">Masaze</a></li>
-                    </ul>
-                </div>
-                <div class="row-break"></div>
-                <div class="rezime" style="margin-top: 100px;">
-                    <h3> Tamara Stevanovic <br> Master Fizioterapeut </h3>
-                    <ul>
-                        <li>Iskustvo 10 godina na Institutu za Rehabilitaciju, Sokobanjska</li>
-                        <li>7 godina profesor na katedri za kineziologiju</li>
-                        <li>2 objavljena naucna rada</li>
-                        <li>200+ razlicitih pacijenata</li>
-                        <li>20+ stalnih pacijenata</li>
-                        <li><a href="#planovi">Grupni treninzi</a></li>
-                    </ul>
-                </div>
-                <img src="slike/woman1-1.png" alt="tamara" style="-webkit-transform: scaleX(-1);
-                    transform: scaleX(-1);">
-                <div class="row-break"></div>
-                <img src="slike/woman1-1.png" alt="tamara">
-                <div class="rezime" style="margin-top: 100px;">
-                    <h3> Ivana Prezime <br> Diplomirani Nutricionista </h3>
-                    <ul>
-                        <li>Preko 100 razlicitih pacijenata</li>
-                        <li><a href="#nutri">O programu</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="masaze" class="masaza">
-                <div class="kartica">
+                <h2 class="aps" style="top: 10%; left: 75%;">Masaze</h2>
+            <div id="masaze" class="aps kartica" style="top: 20%; left: 25%;"> <!-- Kartica -->
                     <div class="kartica-inner">
-                      <div class="kartica-front">
-                        <div class="blur"><h2>Masaze</h2></div>
+                        <div class="kartica-front unutrasnja" style="background-image: url(slike/ulje3.png);">
+                            <div class="blur"><h2>Relax Masaza</h2></div>
+                        </div>
+                      <div class="kartica-back unutrasnja">
+                        <ul>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                                Ublazivanje stresa u zglobovima</li>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                                Opustanje misica</li>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                                Poboljsanje posture</li>
+                        </ul>
+                        </div>
                     </div>
-                      <div class="kartica-back">
-                        <h2>John Doe</h2> 
-                        <p>Architect & Engineer</p>
-                      </div>
+            </div>                  <!-- kraj Kartice -->
+            <div class="aps kartica" style="top: 35%; left: 75%;"> <!-- Kartica -->
+                    <div class="kartica-inner">
+                        <div class="kartica-front unutrasnja" style="background-image: url(slike/ulje2.jpg);">
+                            <div class="blur"><h2>Terapeutska Masaza</h2></div>
+                        </div>
+                      <div class="kartica-back unutrasnja">
+                        <ul>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                                Olaksanje u bolnim regijama</li>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                                Poboljsanje pokretljivosti zglobova i kicme</li>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                                Rehabilitacija od povreda</li>
+                        </ul>
+                        </div>
                     </div>
-                  </div>
-            </div>
-            <div id="nutri" class="">
+            </div>                   <!-- kraj Kartice -->
+            <div class="aps kartica" style="top: 55%; left: 25%;"> <!-- Kartica -->
+                    <div class="kartica-inner">
+                        <div class="kartica-front unutrasnja" style="background-image: url(slike/masaza1.jpg);">
+                            <div class="blur"><h2>Sportska Masaza</h2></div>
+                        </div>
+                      <div class="kartica-back unutrasnja">
+                        <ul>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                                ab</li>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                               ab</li>
+                        </ul>
+                        </div>
+                    </div>
+            </div>                   <!-- kraj Kartice -->
+            <div class="aps kartica" style="top: 70%; left: 75%;"> <!-- Kartica -->
+                    <div class="kartica-inner">
+                        <div class="kartica-front unutrasnja" style="background-image: url(slike/ulje1.jpg);">
+                            <div class="blur"><h2>Anticelulit Masaza</h2></div>
+                        </div>
+                      <div class="kartica-back unutrasnja">
+                        <ul>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                                ab</li>
+                            <li>
+                                <img src="slike/ikonice/accept.png" alt="">
+                                ab</li>
+                        </ul>
+                        </div>
+                    </div>
+            </div>                   <!-- kraj Kartice -->
+                <img src="slike/ikonice/social-media.png" class="aps telefon">
+                <a href="#kontakt" class="aps" style="top: 80%; left: 32%;">Zakazite Sada</a>
+        </div>
 
+        <div class="profil" id="tim">
+            <div class="plavi-paralelogram plava-gr-o" style="top: 33rem; left: -25rem;">
             </div>
-            <div id="planovi" class="">
+                
+            <img src="slike/anim/physiotherapy_1.png" class="ikona-rehab" style="top: 21%; left: 52%;" alt="">
+            <img src="slike/anim/physiotherapy_3.png" class="ikona-rehab" style="top: 32%; left: 39%;" alt="">
+            <img src="slike/anim/physiotherapy_2.png" class="ikona-rehab" style="top: 28%; left: 79%;" alt="">
+            <img src="slike/anim/physiotherapy_4.png" class="ikona-rehab" style="top: 57%; left: 43%;" alt="">
+                
+            <div class=""><!-- poz-krug bojaPozKrug -->
+                <img src="slike/man1-3.png" class="profilna" alt="vlada">
+            </div>
 
+            <div class="rezime">
+                <h3> Vladimir Stevanovic <br> Master Fizioterapeut </h3>
+                <ul>
+                <li>Iskustvo 15 godina na Institutu za Rehabilitaciju, Sokobanjska</li>
+                    <li>3 objavljena naucna rada</li>
+                    <li>4 godine iskustva u radu sa studentima</li>
+                    <li>200+ razlicitih pacijenata</li>
+                    <li>20+ stalnih pacijenata</li>
+                    <li><a href="#masaze">Masaze</a></li>
+                </ul>
             </div>
-            <div id="kontakt" class="">
 
-            </div>
-            <div id="faq" class="">
+            <div class="row-break"></div>
 
+            <div class="rezime" style="margin-top: 100px;">
+                <h3> Tamara Stevanovic <br> Master Fizioterapeut </h3>
+                <ul>
+                    <li>Iskustvo 10 godina na Institutu za Rehabilitaciju, Sokobanjska</li>
+                    <li>7 godina profesor na katedri za kineziologiju</li>
+                    <li>2 objavljena naucna rada</li>
+                    <li>200+ razlicitih pacijenata</li>
+                    <li>20+ stalnih pacijenata</li>
+                    <li><a href="#planovi">Grupni treninzi</a></li>
+                </ul>
             </div>
+                
+            <div class=""><!-- poz-krug bojaPozKrug -->
+                <img src="slike/woman1-1.png" class="profilna" alt="tamara" style="-webkit-transform: scaleX(-1);
+                transform: scaleX(-1);">
+            </div>
+
+            <div class="row-break"></div>
+
+            <div class=""><!-- poz-krug bojaPozKrug -->
+                <img src="slike/woman1-1.png" class="profilna" alt="ivana"> 
+            </div>
+            <div class="rezime" style="margin-top: 100px;">
+                <h3> Ivana Misic <br> Diplomirani Nutricionista </h3>
+                <ul>
+                    <li>Preko 100 razlicitih pacijenata</li>
+                    <li><a href="#nutri">O programu</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="nutri" class="">
+            
+        </div>
+        <div id="kontakt" class="">
+
+        </div>
+        <div id="faq" class="">
+
+        </div>
     </body>
 </html>
